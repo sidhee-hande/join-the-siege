@@ -1,0 +1,10 @@
+This is a text file which has a summary of the models I am considering. 
+- Kl3m 
+    - Low context window, input was truncated
+    - Was completing the document instead of classifying the document
+    - It is a causal LM
+- Mistral
+    - LLMs have been trained on millions of documents and have internal knowledge of what contracts, invoices, resumes, etc. look like. You’re leveraging that directly — no training required.
+    - If you want to determine the type of a document based on its text, but don’t have predefined labels or examples, you can approach this with a prompt-based zero-shot strategy using an LLM (Large Language Model). This avoids clustering and avoids needing labeled data.
+    - Trade-off of memory vs cost
+    - Took too long to generate a response
