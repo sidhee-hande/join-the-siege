@@ -14,10 +14,10 @@ Running Locally
 
 2. Add the following variables to a .env file:
 
-OPENAI_API_KEY=your-key-here
+```OPENAI_API_KEY=your-key-here
 FLASK_ENV=production
 API_TOKEN=your-key-here
-
+```
 2. Install dependencies:
     ```shell
     python -m venv venv
@@ -61,9 +61,10 @@ Running on Docker
     ```
 4. Add the following variables to a .env file:
 
-OPENAI_API_KEY=your-key-here
+```OPENAI_API_KEY=your-key-here
 FLASK_ENV=production
 API_TOKEN=your-key-here
+```
 
 5. Build the Docker container
     ```
@@ -73,3 +74,11 @@ API_TOKEN=your-key-here
    ```
    docker run --env-file .env -p 8000:8000 flask-classifier
    ```
+
+
+Notes
+The LLM prompt is designed to be industry-agnostic and adaptable to various document types. Since the model processes the actual text content, it can accurately identify the document type even if the filename is incorrect.
+For production deployment, the application uses Gunicorn instead of Flask’s built-in server, offering a robust, multi-threaded, and production-ready setup.
+The application is Dockerized to support seamless storage in a remote container registry and streamlined deployment.
+Token-based authentication is implemented: API access is permitted only when the token provided in the request header matches the one defined in the environment file.
+Comprehensive tests are included to validate the service’s functionality.
