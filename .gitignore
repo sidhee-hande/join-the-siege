@@ -6,6 +6,5 @@ __pycache__
 *.pyc
 ideas.txt
 .env
-*.pdf
 *.xlsx
 *.csv
