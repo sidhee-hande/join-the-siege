@@ -70,7 +70,8 @@ API_TOKEN=your-key-here
 
 5. Build the Docker container
     ```
-    docker build -t flask-classifier 
+    docker build -t flask-classifier .
+
     ```
 6. Run Docker Container
    ```
