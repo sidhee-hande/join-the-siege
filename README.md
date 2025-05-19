@@ -3,6 +3,7 @@
 Essential:
 Make an OpenAI API account and generate an API Key. 
 Contact Sidhee for a sample API Key.
+Tesseract must be installed and added to the system path for OCR functionality
 
 Running Locally
 
