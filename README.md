@@ -77,6 +77,14 @@ API_TOKEN=your-key-here
    ```
    docker run --env-file .env -p 8000:8000 flask-classifier
    ```
+7. Navigate to http://localhost:8000/apidocs/  to use the API
+
+8. Click on Authorize button and enter the API_TOKEN in this way:
+    ```
+    Bearer your-api-token
+    ```
+
+9. Use the API to upload a file and classify it
 
 
 Notes
